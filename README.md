@@ -52,3 +52,16 @@ Logs:
  => => writing image sha256:d9a982b484e598a91f8dba5731e38b51235becf1dd384a74e13695205edc9e83                                                                                 0.0s
  => => naming to docker.io/library/rbmrclo                                                                                                                                   0.0s
 ```
+
+Patch:
+```diff
+diff --git a/go.mod b/go.mod
+index 2e7b02d..8d69ff0 100644
+--- a/go.mod
++++ b/go.mod
+@@ -1,3 +1,3 @@
+-module v1
++module github.com/payjp/payjp-go
+
+ go 1.15
+```
